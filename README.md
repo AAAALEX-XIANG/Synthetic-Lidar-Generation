@@ -1,1 +1,1 @@
-# Synthetic-Lidar-Generation
+# Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition.![image](https://github.com/AAAALEX-XIANG/Synthetic-Lidar-Generation/assets/55607383/8a2699b1-d909-4df8-b2f2-e4f4c53728c3)
