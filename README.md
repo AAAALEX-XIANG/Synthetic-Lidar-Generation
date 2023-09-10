@@ -1,6 +1,6 @@
 # Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition.
 
-This repository contains the official implementation for our paper, "Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition," currently under review.
+This repository contains the official implementation for our paper, "Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition", currently under review.
 
 This repository is structured in two major components:
 1. A pointnet-based classifier for object recognition.
