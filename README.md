@@ -1,1 +1,9 @@
-# Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition.![image](https://github.com/AAAALEX-XIANG/Synthetic-Lidar-Generation/assets/55607383/8a2699b1-d909-4df8-b2f2-e4f4c53728c3)
+# Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition.
+
+This repository contains the official code and experimental results for our paper, "Synthetic lidar point cloud generation using deep generative models for improved driving scene object recognition," currently under review.
+
+This repository is structured in two major components:
+1. A pointnet-based classifier for object recognition.
+2. Four generative models involved in this research.
+
+More running instructions and environmental details will be released later...
