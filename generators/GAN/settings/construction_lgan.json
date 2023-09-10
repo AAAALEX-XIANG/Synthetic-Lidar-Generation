@@ -1,0 +1,78 @@
+{
+    "experiment_name": "construction",
+    "normal_mu": 0.0,
+    "normal_std": 0.2,
+    "prior_size": 64,
+
+
+    "results_root": "results",
+    "clean_results_dir": false,
+
+    "cuda": true,
+    "gpu": 0,
+
+    "reconstruction_loss": "chamfer",
+
+    "metrics": [
+    ],
+
+    "dataset": "nuscenes",
+    "data_dir": "/home/alex/Desktop/Research/datasets/nuScenes/object/test/construction",
+    "classes": [],
+    "shuffle": true,
+    "transforms": ["rotate"],
+    "num_workers": 4,
+    "n_points": 2048,
+
+    "max_epochs": 10000,
+    "batch_size": 64,
+    "gp_lambda": 30,
+    "z_size": 2048,
+    "distribution": "normal",
+    "generate_scale": 0.5, 
+
+    "seed": 2022,
+    "save_frequency": 50,
+    "epsilon": 0.001,
+
+    "encoder":"/home/alex/Desktop/Research/MasterProject/codes/generators/GMM/results/autoencoder/construction/weights/05000_E.pth",
+    "decoder":"/home/alex/Desktop/Research/MasterProject/codes/generators/GMM/results/autoencoder/construction/weights/05000_G.pth",
+
+    "arch": "l_gan",
+    "model": {
+        "E": {
+            "dropout": 0.2,
+            "use_bias": true,
+            "relu_slope": 0.2
+        },
+        "D": {
+            "dropout": 0.2,
+            "use_bias": true,
+            "relu_slope": 0.2
+        },
+        "G": {
+            "dropout": 0.2,
+            "use_bias": true,
+            "relu_slope": 0.2
+        },
+        "De": {
+            "dropout": 0.2,
+            "use_bias": true,
+            "relu_slope": 0.2
+        }
+    },
+    "optimizer": {
+        "D": {
+            "type": "Adam",
+            "hyperparams": {
+                "lr": 0.0001
+            }
+        },
+        "G": {
+            "type": "Adam",
+            "hyperparams": {
+                "lr": 0.0001
+            }
+        }
+    }
+}

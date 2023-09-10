@@ -1,0 +1,56 @@
+{
+    "experiment_name": "static_object",
+
+    "normal_mu":0.0,
+    "normal_std":0.2,
+
+    "results_root": "results",
+    "clean_results_dir": false,
+
+    "cuda": true,
+    "gpu": 0,
+
+    "reconstruction_loss": "chamfer",
+
+    "metrics": [
+    ],
+
+    "dataset": "nuscenes",
+    "data_dir": "/data/gpfs/projects/punim1650/Alex/data/real/static_object",
+    "classes": [],
+    "shuffle": true,
+    "transforms": ["rotate"],
+    "num_workers": 4,
+    "n_points": 2048,
+
+    "max_epochs": 5000,
+    "batch_size": 64,
+    "gp_lambda": 30,
+    "reconstruction_coef": 0.05,
+    "z_size": 2048,
+    "distribution": "normal",
+
+    "seed": 2018,
+    "save_frequency": 50,
+    "epsilon": 0.001,
+
+    "arch": "vae",
+    "model": {
+        "G": {
+            "use_bias": true,
+            "relu_slope": 0.2
+        },
+        "E": {
+            "use_bias": true,
+            "relu_slope": 0.2
+        }
+    },
+    "optimizer": {
+        "EG": {
+            "type": "Adam",
+            "hyperparams": {
+                "lr": 0.001
+            }
+        }
+    }
+}
