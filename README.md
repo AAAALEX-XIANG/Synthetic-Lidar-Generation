@@ -6,4 +6,3 @@ This repository is structured in two major components:
 1. A pointnet-based classifier for object recognition.
 2. Four generative models involved in this research.
 
-More running instructions and environmental details will be released later...
